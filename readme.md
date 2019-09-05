@@ -1,14 +1,10 @@
-
-
-
-
-**# Git 기초**
+# Git 기초
 
 Git 기초 커맨드
 
 
 
-**## 기본 커맨드**
+## 기본 커맨드
 
 - `git init`: Git으로 프로젝트 관리 시작하겠다. (`.git` 폴더가 생김 
 
@@ -26,11 +22,11 @@ Git 기초 커맨드
 
 - git의 세 가지 상태 폴더
 
-   \- Working Directory(=Working tree):
+   - Working Directory(=Working tree):
 
 ​    현재 작업 중인 폴더, Git이 늘 쳐다보고 있음. 
 
-   \- Staging area(index):
+   - Staging area(index):
 
 ​      (사진대에 파일 추가하겠다.(git add  )
 
@@ -38,7 +34,7 @@ Git 기초 커맨드
 
 ​      언제든 이 곳으로 다시 돌아갈 수 있도록.
 
-   \- 특정 사진 찍는데 설명을 꼭 해줘야 함. 
+   - 특정 사진 찍는데 설명을 꼭 해줘야 함. 
 
 ​       
 
@@ -66,9 +62,9 @@ Git 기초 커맨드
 
 **## 추가 커맨드**
 
-\- `git checkout [커밋해시]`: 특정 commit을 확인하기
+- `git checkout [커밋해시]`: 특정 commit을 확인하기
 
-\- `git restore [파일명]`:뭔가 새로 추가했는데 마음에 들지 않았다. (가장 최신 커밋으로 돌아가고 싶음.)
+- `git restore [파일명]`:뭔가 새로 추가했는데 마음에 들지 않았다. (가장 최신 커밋으로 돌아가고 싶음.)
 
 ## 원격 저장소 관리(집에서 작업)
 - `git remote`: 원격 저장소의 정보(이름)
