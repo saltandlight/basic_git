@@ -2,6 +2,19 @@
 
 Git 기초 커맨드
 
+- readme.md 로 프로젝트를 설명해줘야 함.(무조건 찍어주고 가기)
+- 폴더 어떻게 운영할 지 readme에 정리(수칙,나와의 약속 등)
+- 오자마자 친절하게 이 폴더에 뭐가 있는지 알려줘야 함.
+
+1. 코드 관리 도구
+   - SCM: Source Conde Message
+   - VCS: Version control
+2. 원격 저장소(git/github)
+3. 협업 도구 
+   - push & pull
+   - forking & pull request
+   - branching &request(github flow)
+
 
 
 ## 기본 커맨드
