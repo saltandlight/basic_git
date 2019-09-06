@@ -1,9 +1,19 @@
-
-
-
 # Git 기초
 
 Git 기초 커맨드
+
+- readme.md 로 프로젝트를 설명해줘야 함.(무조건 찍어주고 가기)
+- 폴더 어떻게 운영할 지 readme에 정리(수칙,나와의 약속 등)
+- 오자마자 친절하게 이 폴더에 뭐가 있는지 알려줘야 함.
+
+1. 코드 관리 도구
+   - SCM: Source Conde Message
+   - VCS: Version control
+2. 원격 저장소(git/github)
+3. 협업 도구 
+   - push & pull
+   - forking & pull request
+   - branching &request(github flow)
 
 
 
@@ -19,9 +29,8 @@ Git 기초 커맨드
 
 
 - git의 세 가지 상태 폴더
-   - Working Directory(=Working tree):
-​    현재 작업 중인 폴더, Git이 늘 쳐다보고 있음. 
    - Staging area(index):
+
 ​      (사진대에 파일 추가하겠다.(git add  )
 ​      스냅샷 찍어서 올리는 곳)
 ​      언제든 이 곳으로 다시 돌아갈 수 있도록.
@@ -50,5 +59,5 @@ Git 기초 커맨드
 - `git remote -v`: 원격 저장소의 정보(이름, 주소)
 - `git remote add [이름] [주소]`: 원격 저장소 추가
 - `git push [저장소 이름] [브랜치 이름]`: 원격 저장소 코드 업데이트
-- `git clone [주소] [프로젝트 이름]`: 원격 저장소 코드 복제 
-
+- `git clone [주소] [프로젝트 이름]`: 원격 저장소 코드 복제,
+    깃으로 관리되는 애 밑에 깃 또 클론하면 안 됨(태양은 하나여야 한다. )
