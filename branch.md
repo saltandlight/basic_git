@@ -1,54 +1,41 @@
+# Git Branch
 
+Branch를 통한 코드 관리
 
+시작은 master에서 함
+first commit
+브랜치 만듬(test)
+아직 test도 master 와 함께 있음.
+나중에 알게 되면 브랜치는 그저 포인터였을 뿐임.
 
-# Git 기초
+## 깃을 알아야 하는 이유
 
-Git 기초 커맨드
+- CI, CD 를 하기 위해서 깃을 기업들이 사용함.
+- 깃은 각각의 브랜치를 다른 세계로 인식함.
+  (평행우주 같이 인식) --> 가장 큰 장점
+- 한 번 넘어가면 못 돌아옴
 
+## Branch
 
+1. `git branch`: 깃 브랜치 확인 
+   깃 브랜치들을 알려주고 나의 위치를 알려줌
+2. `git branch [브랜치명]`: 브랜치 생성 명령문
+3. `git switch [브랜치명]`: 브랜치 전환
 
-## 기본 커맨드
+## Merge 시나리오
 
-- `git init`: Git으로 프로젝트 관리 시작하겠다. (`.git` 폴더가 생김 
+1. fast-forward : 
+   main이 될 애를 찾음(=master)
+   new는 곁가지 
 
--> 망하면 .git을 지우면 됨.)
-- `git add [파일명]`:staging
-- `git status`: 상태 확인
-- `git commit -m [메시지]`: commit
-- `git log`:commit 히스토리
+main입장에서 합병하는 느낌
+내가 흡수를 할 애로 이동함 (main이 )
+merge 중 가장 쉬운 merge
 
+2. Auto-merge(merge without conflict)
+3. Merge with Conflict
 
-- git의 세 가지 상태 폴더
-   - Working Directory(=Working tree):
-​    현재 작업 중인 폴더, Git이 늘 쳐다보고 있음. 
-   - Staging area(index):
-​      (사진대에 파일 추가하겠다.(git add  )
-​      스냅샷 찍어서 올리는 곳)
-​      언제든 이 곳으로 다시 돌아갈 수 있도록.
-   - 특정 사진 찍는데 설명을 꼭 해줘야 함. 
+## Conflict 발생 
 
-
-
-해쉬함수: 어떤 값을 인자로 보내든지 2^160 자리의 수로 반환함 
-디지털 세계의 암호화 담당함. 
-
-깃에서 sha1을 쓴다.
--> 작은 변화도 금방 알아낸다. (해쉬 숫자값이 바뀌면 데이터가 변경되었음을 알아냄.)
-
-
-깃 커밋 메세지: 
-동사 목적어 형태로 쓰기 
-합니다(동사원형) 무엇을~~
-
-
-## 추가 커맨드
-- `git checkout [커밋해시]`: 특정 commit을 확인하기
-- `git restore [파일명]`:뭔가 새로 추가했는데 마음에 들지 않았다. (가장 최신 커밋으로 돌아가고 싶음.)
-
-## 원격 저장소 관리(집에서 작업)
-- `git remote`: 원격 저장소의 정보(이름)
-- `git remote -v`: 원격 저장소의 정보(이름, 주소)
-- `git remote add [이름] [주소]`: 원격 저장소 추가
-- `git push [저장소 이름] [브랜치 이름]`: 원격 저장소 코드 업데이트
-- `git clone [주소] [프로젝트 이름]`: 원격 저장소 코드 복제 
-
+1. 이젠 conflict가 날거야 같은 줄을 수정했으니(master에서 작성)
+2. 이건 conflict 브랜치에서 작성
